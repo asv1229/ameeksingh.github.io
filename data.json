@@ -1,1 +1,95 @@
 
+{
+  "name": "Ameek Singh",
+  "contact": {
+    "address": "20610 97a Ave NW, Edmonton, Alberta T5T 4V6",
+    "phone": "780-628-4499",
+    "email": "ameeksinghv@gmail.com"
+  },
+  "education": [
+    {
+      "title": "Stratford Elementary and Junior High School",
+      "description": "Grade 9 Completion",
+      "date": "September 2016 - June 2026"
+    }
+  ],
+  "volunteer": [
+    {
+      "title": "Edmonton Public Library Reading Buddies Program",
+      "description": "Aided children aged 7-9 in literacy skills (13 Hours).",
+      "date": "October 2025 - June 2026"
+    },
+    {
+      "title": "Stratford Elementary and Junior High School",
+      "description": "French Tutoring (15 Hours).",
+      "date": "November 2025 - June 2026"
+    }
+  ],
+  "skills": [
+    {
+      "title": "Computer Skills",
+      "description": "Fluent to semi-fluent across programming languages such as Python, HTML, Java, and CSS."
+    },
+    {
+      "title": "Leadership and Management",
+      "description": "Sole leader, founder, and manager of the Robotics Club at Stratford School."
+    },
+    {
+      "title": "Multilingual",
+      "description": "Highly fluent in English, French, and Punjabi."
+    },
+    {
+      "title": "Public Speaking & Independent Work",
+      "description": "Presented at school assemblies, auditioned for Master of Ceremonies, and highly productive working independently."
+    }
+  ],
+  "achievements": [
+    {
+      "title": "Advanced Placement in Mathematics",
+      "description": "Top four percent (placed 237 of 5534) at grade level in the Kumon program.",
+      "date": "July 2026"
+    },
+    {
+      "title": "Science Award & Honors Award",
+      "description": "Graduated Junior High with Honors and achieved the highest mark in the grade in Science for Grade 8 and 9.",
+      "date": "June 2026"
+    },
+    {
+      "title": "Achieved A2 Fluency in French",
+      "description": "Reached the A2 level in French after nine years of learning.",
+      "date": "June 2026"
+    }
+  ],
+  "extracurricular": [
+    {
+      "title": "Youth STEAM Innovation Challenge",
+      "description": "Participated and placed 2nd overall.",
+      "date": "March 2026"
+    },
+    {
+      "title": "Badminton Team, Stratford Junior High",
+      "description": "Competed in the City Championships in the Mixed Doubles category.",
+      "date": "April 2026 - May 2026"
+    },
+    {
+      "title": "Founder of Stratford Junior High Robotics Club",
+      "description": "Founded the club, which met for an hour every Monday.",
+      "date": "January 2026 - Present"
+    },
+    {
+      "title": "Community League Soccer",
+      "description": "Demonstrated consistent teamwork and strong communication skills.",
+      "date": "June 2024 - August 2024"
+    }
+  ],
+  "hobbies": [
+    {
+      "title": "Simulation Racing",
+      "description": ""
+    },
+    {
+      "title": "Reading",
+      "description": ""
+    }
+  ]
+}
