@@ -5,12 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
             const content = document.getElementById('portfolio-content');
             let html = '';
 
-            // Hero Section with Photo and Details
+            // Hero Section with your photo and details
             html += `
                 <div class="hero-container fade-in">
                     <div class="profile-photo">
-                        <!-- Add your image file path here later if desired, e.g., <img src="./photo.jpg" alt="Ameek Singh"> -->
-                        <span>Photo</span>
+                        <img src="./1774982788567.png" alt="${data.name}">
                     </div>
                     <div>
                         <h1>${data.name}</h1>
@@ -19,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
             `;
 
-            // Sections paired with Lucide icon names
+            // Core Resume Sections Mapping
             const sections = [
                 { key: 'education', title: 'Education', icon: 'graduation-cap' },
                 { key: 'volunteer_experience', title: 'Volunteer Experience', icon: 'heart-handshake' },
@@ -41,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     
                     let combinedText = data[sec.key].map(item => {
                         const dateText = item.date ? ` (${item.date})` : '';
-                        return `<strong>${item.title}</strong>${dateText} — ${item.description}`;
+                        return `<strong>${item.title}</strong>${dateText}, ${item.description}`;
                     }).join(' ');
 
                     html += combinedText;
@@ -54,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // Render Lucide Vector Icons
             lucide.createIcons();
 
-            // Intersection Observer for Smooth Scroll Reveals
+            // High-performance Intersection Observer for smooth scroll reveals
             const observerOptions = {
                 threshold: 0.15,
                 rootMargin: "0px 0px -50px 0px"
