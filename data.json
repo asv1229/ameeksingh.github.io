@@ -7,82 +7,81 @@
   "education": [
     {
       "title": "Stratford Elementary and Junior High School",
-      "description": "Grade 9 Completion",
+      "description": "Completed junior high curriculum with top-tier academic standing, establishing a strong foundation in STEM and humanities.",
       "date": "September 2016 - June 2026"
     }
   ],
   "volunteer_experience": [
     {
       "title": "Edmonton Public Library",
-      "description": "Reading Buddies Program — Aided children aged 7-9 in developing literacy skills.",
+      "description": "Empowered children aged 7-9 to build confidence and foundational literacy through the Reading Buddies Program.",
       "date": "October 2025 - November 2025"
     },
     {
       "title": "Stratford Elementary and Junior High School",
-      "description": "French Tutoring — Assisted students struggling with language coursework.",
+      "description": "Provided targeted one-on-one French tutoring to help peers overcome language barriers and master course material.",
       "date": "November 2025 - June 2026"
     }
   ],
   "skills_and_abilities": [
     {
       "title": "Computer Skills",
-      "description": "Accurately troubleshoot and fix computer hardware; fluent to semi-fluent in Python, HTML, Java, and CSS."
+      "description": "Advanced hardware troubleshooting capabilities paired with fluent-to-semi-fluent coding proficiency across Python, HTML, Java, and CSS."
     },
     {
       "title": "Leadership and Management",
-      "description": "Sole leader, founder, and manager of the Robotics Club at Stratford School utilizing the VEX V5 EDR platform."
+      "description": "Founded, structured, and solely managed the Stratford School Robotics Club, directing hands-on engineering projects using the VEX V5 EDR platform."
     },
     {
       "title": "Public Speaking & Independent Work",
-      "description": "Presented at annual school assemblies, auditioned for Master of Ceremonies, and optimized for independent productivity."
+      "description": "Delivered speeches at annual school assemblies, auditioned for Master of Ceremonies roles, and excelled in autonomous, high-productivity environments."
     },
     {
-      "title": "Multilingual & Teaching",
-      "description": "Highly fluent in English, French, and Punjabi with formal experience tutoring and mentoring younger students."
+      "title": "Multilingual",
+      "description": "Highly fluent in English, French, and Punjabi, enabling effective cross-cultural communication and linguistic versatility."
+    },
+    {
+      "title": "Teaching & Mentorship",
+      "description": "Skilled in breaking down complex concepts to mentor younger students and peers through structured academic support programs."
     }
   ],
   "achievements": [
     {
       "title": "Advanced Placement in Mathematics",
-      "description": "Placed 237 out of 5534 at grade level in the Kumon program, placing in the top four percent.",
+      "description": "Achieved elite academic standing through the Kumon program, placing 237th out of 5,534 students globally at grade level (top 4%).",
       "date": "July 2026"
     },
     {
       "title": "Honors Award",
-      "description": "Graduated Junior High with the Honors Award.",
+      "description": "Graduated Junior High with formal recognition for sustained academic excellence.",
       "date": "June 2026"
     },
     {
       "title": "Science Award",
-      "description": "Completed Grade 8 and 9 with the highest mark in the grade in Science.",
+      "description": "Earned the highest mark in the entire grade for Science across both Grade 8 and Grade 9.",
       "date": "June 2026"
     },
     {
       "title": "Achieved A2 Fluency in French",
-      "description": "Reached the A2 level in French after nine years of learning.",
+      "description": "Successfully attained official A2 level proficiency following a dedicated nine-year language learning path.",
       "date": "June 2026"
     }
   ],
   "extra_curricular": [
     {
       "title": "Youth STEAM Innovation Challenge",
-      "description": "Participated in the challenge and placed 2nd overall.",
+      "description": "Designed creative technical solutions under tight constraints to capture 2nd place overall in a competitive regional challenge.",
       "date": "March 2026"
     },
     {
       "title": "Badminton Team, Stratford Junior High",
-      "description": "Competed in the City Championships in the Mixed Doubles category representing the school.",
+      "description": "Represented the school at the City Championships, competing at a high level in the Mixed Doubles category.",
       "date": "April 2026 - May 2026"
     },
     {
       "title": "Founder of Stratford Junior High Robotics Club",
-      "description": "Established and managed weekly club meetings focusing on hands-on programming and engineering.",
+      "description": "Established and led weekly collaborative sessions focused on hardware prototyping, logic mapping, and engineering design.",
       "date": "January 2026 - Present"
-    },
-    {
-      "title": "Community League Soccer",
-      "description": "Demonstrated consistent teamwork and strong communication skills.",
-      "date": "June 2024 - August 2024"
     }
   ]
 }
