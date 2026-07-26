@@ -26,9 +26,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (data[sec.key] && data[sec.key].length > 0) {
                     html += `<section class="fade-in"><h2>${sec.title}</h2><p class="section-paragraph">`;
                     
-                    // Combine all items in the section into a flowing narrative paragraph
+                    // Conditionally include dates only if they exist to prevent empty parentheses
                     let combinedText = data[sec.key].map(item => {
-                        return `<strong>${item.title}</strong> (${item.date || ''}): ${item.description}`;
+                        const dateText = item.date ? ` (${item.date})` : '';
+                        return `<strong>${item.title}</strong>${dateText}: ${item.description}`;
                     }).join(' ');
 
                     html += combinedText;
