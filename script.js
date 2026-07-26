@@ -5,15 +5,15 @@ document.addEventListener("DOMContentLoaded", () => {
             const content = document.getElementById('portfolio-content');
             let html = '';
 
-            // Header
+            // Header Section
             html += `
                 <header class="fade-in">
                     <h1>${data.name}</h1>
-                    <p>${data.contact.email} &bull; ${data.contact.address}</p>
+                    <div class="contact-line">${data.contact.email} &bull; ${data.contact.address}</div>
                 </header>
             `;
 
-            // Sections matching resume layout
+            // Core Resume Sections Mapping
             const sections = [
                 { key: 'education', title: 'Education' },
                 { key: 'volunteer_experience', title: 'Volunteer Experience' },
@@ -26,10 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (data[sec.key] && data[sec.key].length > 0) {
                     html += `<section class="fade-in"><h2>${sec.title}</h2><p class="section-paragraph">`;
                     
-                    // Conditionally include dates only if they exist to prevent empty parentheses
                     let combinedText = data[sec.key].map(item => {
                         const dateText = item.date ? ` (${item.date})` : '';
-                        return `<strong>${item.title}</strong>${dateText}: ${item.description}`;
+                        return `<strong>${item.title}</strong>${dateText} — ${item.description}`;
                     }).join(' ');
 
                     html += combinedText;
@@ -39,15 +38,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
             content.innerHTML = html;
 
-            const observer = new IntersectionObserver((entries) => {
+            // High-performance Intersection Observer for buttery scroll reveals
+            const observerOptions = {
+                threshold: 0.15,
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const observer = new IntersectionObserver((entries, observerInstance) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
+                        observerInstance.unobserve(entry.target);
                     }
                 });
-            }, { threshold: 0.1 });
+            }, observerOptions);
 
             document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
         })
-        .catch(error => console.error('Error loading resume data:', error));
+        .catch(error => console.error('Error loading portfolio data:', error));
 });
