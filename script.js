@@ -5,26 +5,39 @@ document.addEventListener("DOMContentLoaded", () => {
             const content = document.getElementById('portfolio-content');
             let html = '';
 
-            // Header Section
+            // Hero Section with Photo and Details
             html += `
-                <header class="fade-in">
-                    <h1>${data.name}</h1>
-                    <div class="contact-line">${data.contact.email} &bull; ${data.contact.address}</div>
-                </header>
+                <div class="hero-container fade-in">
+                    <div class="profile-photo">
+                        <!-- Add your image file path here later if desired, e.g., <img src="./photo.jpg" alt="Ameek Singh"> -->
+                        <span>Photo</span>
+                    </div>
+                    <div>
+                        <h1>${data.name}</h1>
+                        <div class="contact-line">${data.contact.email} &bull; ${data.contact.address}</div>
+                    </div>
+                </div>
             `;
 
-            // Core Resume Sections Mapping
+            // Sections paired with Lucide icon names
             const sections = [
-                { key: 'education', title: 'Education' },
-                { key: 'volunteer_experience', title: 'Volunteer Experience' },
-                { key: 'skills_and_abilities', title: 'Skills and Abilities' },
-                { key: 'achievements', title: 'Achievements' },
-                { key: 'extra_curricular', title: 'Extra-Curricular' }
+                { key: 'education', title: 'Education', icon: 'graduation-cap' },
+                { key: 'volunteer_experience', title: 'Volunteer Experience', icon: 'heart-handshake' },
+                { key: 'skills_and_abilities', title: 'Skills and Abilities', icon: 'cpu' },
+                { key: 'achievements', title: 'Achievements', icon: 'trophy' },
+                { key: 'extra_curricular', title: 'Extra-Curricular', icon: 'compass' }
             ];
 
             sections.forEach(sec => {
                 if (data[sec.key] && data[sec.key].length > 0) {
-                    html += `<section class="fade-in"><h2>${sec.title}</h2><p class="section-paragraph">`;
+                    html += `
+                        <section class="fade-in">
+                            <div class="section-header">
+                                <i data-lucide="${sec.icon}"></i>
+                                <h2>${sec.title}</h2>
+                            </div>
+                            <p class="section-paragraph">
+                    `;
                     
                     let combinedText = data[sec.key].map(item => {
                         const dateText = item.date ? ` (${item.date})` : '';
@@ -38,7 +51,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
             content.innerHTML = html;
 
-            // High-performance Intersection Observer for buttery scroll reveals
+            // Render Lucide Vector Icons
+            lucide.createIcons();
+
+            // Intersection Observer for Smooth Scroll Reveals
             const observerOptions = {
                 threshold: 0.15,
                 rootMargin: "0px 0px -50px 0px"
