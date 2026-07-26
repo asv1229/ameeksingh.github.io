@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </header>
             `;
 
-            // Sections matching resume layout (excluding objective)
+            // Sections matching resume layout
             const sections = [
                 { key: 'education', title: 'Education' },
                 { key: 'volunteer_experience', title: 'Volunteer Experience' },
@@ -24,19 +24,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
             sections.forEach(sec => {
                 if (data[sec.key] && data[sec.key].length > 0) {
-                    html += `<section class="fade-in"><h2>${sec.title}</h2>`;
-                    data[sec.key].forEach(item => {
-                        html += `
-                            <div class="item">
-                                <div class="item-header">
-                                    <span>${item.title}</span>
-                                    ${item.date ? `<span class="date">${item.date}</span>` : ''}
-                                </div>
-                                ${item.description ? `<p>${item.description}</p>` : ''}
-                            </div>
-                        `;
-                    });
-                    html += `</section>`;
+                    html += `<section class="fade-in"><h2>${sec.title}</h2><p class="section-paragraph">`;
+                    
+                    // Combine all items in the section into a flowing narrative paragraph
+                    let combinedText = data[sec.key].map(item => {
+                        return `<strong>${item.title}</strong> (${item.date || ''}): ${item.description}`;
+                    }).join(' ');
+
+                    html += combinedText;
+                    html += `</p></section>`;
                 }
             });
 
