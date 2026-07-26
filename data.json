@@ -1,95 +1,59 @@
-
 {
   "name": "Ameek Singh",
   "contact": {
-    "address": "20610 97a Ave NW, Edmonton, Alberta T5T 4V6",
-    "phone": "780-628-4499",
+    "address": "Edmonton, Alberta",
     "email": "ameeksinghv@gmail.com"
   },
-  "education": [
+  "projects": [
     {
-      "title": "Stratford Elementary and Junior High School",
-      "description": "Grade 9 Completion",
-      "date": "September 2016 - June 2026"
-    }
-  ],
-  "volunteer": [
-    {
-      "title": "Edmonton Public Library Reading Buddies Program",
-      "description": "Aided children aged 7-9 in literacy skills (13 Hours).",
-      "date": "October 2025 - June 2026"
+      "title": "Autonomous & Controlled Robotics",
+      "role": "Founder & Manager, Robotics Club",
+      "description": "Led a school robotics initiative focusing on hardware and software integration. Configured joystick logic and programmed multi-motor systems utilizing the VEX V5 EDR platform.",
+      "technologies": ["Python", "VEX V5 EDR", "Hardware Integration", "Leadership"]
     },
     {
-      "title": "Stratford Elementary and Junior High School",
-      "description": "French Tutoring (15 Hours).",
-      "date": "November 2025 - June 2026"
+      "title": "Simulation Racing Telemetry & Optimization",
+      "role": "Hardware & Strategy Enthusiast",
+      "description": "Utilizing a Next Level Racing GT Lite cockpit and an Xbox Series S to optimize lap strategies on complex circuits. Achieved a personal record of 1:52.190 at Monza driving a Ferrari 296 GTB by fine-tuning cornering strategies without driving assists.",
+      "technologies": ["Telemetry Analysis", "Next Level Racing GT Lite", "Assetto Corsa Competizione"]
+    },
+    {
+      "title": "Youth STEAM Innovation Challenge",
+      "role": "Competitor (2nd Place Overall)",
+      "description": "Collaborated in a fast-paced environment to develop innovative solutions to complex STEAM problems, demonstrating strong decision-making and teamwork under pressure.",
+      "technologies": ["Problem Solving", "Prototyping", "Team Collaboration"]
     }
   ],
   "skills": [
     {
-      "title": "Computer Skills",
-      "description": "Fluent to semi-fluent across programming languages such as Python, HTML, Java, and CSS."
+      "category": "Programming & Development",
+      "items": ["Python", "Java", "HTML", "CSS"]
     },
     {
-      "title": "Leadership and Management",
-      "description": "Sole leader, founder, and manager of the Robotics Club at Stratford School."
-    },
-    {
-      "title": "Multilingual",
-      "description": "Highly fluent in English, French, and Punjabi."
-    },
-    {
-      "title": "Public Speaking & Independent Work",
-      "description": "Presented at school assemblies, auditioned for Master of Ceremonies, and highly productive working independently."
+      "category": "Interpersonal Skills",
+      "items": ["Leadership & Management", "Public Speaking", "Independent Problem Solving", "Multilingual (English, French, Punjabi)"]
     }
   ],
-  "achievements": [
+  "education_timeline": [
+    {
+      "title": "Stratford Elementary and Junior High School",
+      "date": "September 2016 - June 2026",
+      "details": "Grade 9 Completion. Graduated with Honors Award and the Science Award for highest mark in the grade."
+    },
     {
       "title": "Advanced Placement in Mathematics",
-      "description": "Top four percent (placed 237 of 5534) at grade level in the Kumon program.",
-      "date": "July 2026"
+      "date": "July 2026",
+      "details": "Ranked in the top 4% (237 of 5534) at grade level in the Kumon mathematics program."
     },
     {
-      "title": "Science Award & Honors Award",
-      "description": "Graduated Junior High with Honors and achieved the highest mark in the grade in Science for Grade 8 and 9.",
-      "date": "June 2026"
+      "title": "French Language Proficiency",
+      "date": "June 2026",
+      "details": "Achieved A2 level fluency in French after nine years of study."
     },
     {
-      "title": "Achieved A2 Fluency in French",
-      "description": "Reached the A2 level in French after nine years of learning.",
-      "date": "June 2026"
-    }
-  ],
-  "extracurricular": [
-    {
-      "title": "Youth STEAM Innovation Challenge",
-      "description": "Participated and placed 2nd overall.",
-      "date": "March 2026"
-    },
-    {
-      "title": "Badminton Team, Stratford Junior High",
-      "description": "Competed in the City Championships in the Mixed Doubles category.",
-      "date": "April 2026 - May 2026"
-    },
-    {
-      "title": "Founder of Stratford Junior High Robotics Club",
-      "description": "Founded the club, which met for an hour every Monday.",
-      "date": "January 2026 - Present"
-    },
-    {
-      "title": "Community League Soccer",
-      "description": "Demonstrated consistent teamwork and strong communication skills.",
-      "date": "June 2024 - August 2024"
-    }
-  ],
-  "hobbies": [
-    {
-      "title": "Simulation Racing",
-      "description": ""
-    },
-    {
-      "title": "Reading",
-      "description": ""
+      "title": "Edmonton Public Library Reading Buddies",
+      "date": "Oct 2025 - June 2026",
+      "details": "Dedicated over 13 hours to aiding children aged 7-9 in developing critical literacy skills."
     }
   ]
 }
